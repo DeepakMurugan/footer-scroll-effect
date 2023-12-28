@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .fcontainer {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+      background-color: #b40000;
+      margin-bottom: 100px; /* Adjust this margin to accommodate the footer height */
+    }
+
+    .fsticky {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 100px;
+      text-align: center;
+      z-index: 1;
+      display: none;
+      padding: 50px;
+    }
+
+    .fsticky.visible {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="fcontainer">
+    <!-- Your content goes here -->
+    <h1>Main Content</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+
+    <!-- Add more content as needed -->
+  </div>
+
+  <div class="fsticky" id="fsticky">
+    <!-- Your fsticky content goes here -->
+    Sticky Footer
+  </div>
+
+  <script>
+    // JavaScript to show the fsticky when scrolling down
+    window.addEventListener('scroll', function() {
+      var fsticky = document.getElementById('fsticky');
+      var container = document.querySelector('.fcontainer');
+      var containerBottom = container.getBoundingClientRect().bottom;
+
+      if (containerBottom <= window.innerHeight) {
+        fsticky.classList.add('visible');
+      } else {
+        fsticky.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>
